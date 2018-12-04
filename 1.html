@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="theme-color" content="#2932e1">
+	<link rel="stylesheet" href="css/them.css" />
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+		background:#272822;
+		font-family: "微软雅黑";
+	}
+	.box{
+		position:relative;
+		width:600px;
+		height:426px;
+		margin:50px auto;
+		border: 3px solid #fee086;
+	}
+	.box1{
+		position:relative;
+		float:left;
+		width:400px;
+		height:400px;
+		margin:10px;
+		border:1px solid #fee086;
+	}
+	.pic{
+		position:absolute;
+		left:0;
+		top:0;
+		display:none;
+		float:left;
+		width:400px;
+		height:400px;
+	}
+	.pic1{
+		position:absolute;
+		left:0;
+		top:0;
+		display:none;
+		float:left;
+		width:400px;
+		height:400px;
+	}
+	 p{
+		position:absolute;
+		display:none;
+		width:200px;
+		height:60px;
+		top:40%;
+		left:20%;
+		font-size:48px;
+		font-weight:bold;
+		text-align:center;
+		color:#fd3a51;
+	}
+	.info{
+		float:left;
+		width:150px;
+		height:400px;
+		margin:10px;
+		border:1px solid #fee086;
+	}
+	.info button{
+		float:left;
+		margin:20px 30px 0px;
+		width:90px;
+		height:50px;
+		background:rgba(255,255,255,0.4);
+		font-size:16px;
+		border-radius:10px;
+	}
+	span{
+		float:left;
+		width:100px;
+		height:100px;
+		border:1px solid #f0f0f0;
+		background:url("images/1.jpeg") no-repeat;
+		background-size:400px 400px;
+		box-sizing:border-box;
+	}
+	span:hover{
+		opacity:0.7;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box1">
+		<div class="pic"></div>
+		<div class="pic1">
+		</div>
+	    </div>
+		<p class="ready">Ready!</p>
+		<p class="go">GO!</p>
+		<p class="victory">Victory!</p>
+		<div class="option"></div>
+		<div class="info">
+			<button class="start">开始</button>
+			<button >图片</button>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery.min2.1.4.js"></script>
+<script src="js/jQueryUI.min.js"></script>
+<script src="js/Game.js"></script>
+<script>
+	var game = new Game();
+</script>
